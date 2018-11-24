@@ -1,0 +1,27 @@
+﻿<Window x:Class="SuhadahWMS.AddWorkOrderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SuhadahWMS"
+        mc:Ignorable="d"
+        Title="AddWorkOrderWindow" Height="450" Width="800">
+
+    <Grid>
+        <Canvas HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792">
+            <TextBox x:Name="WorkOrderCodeTextbox" TextWrapping="Wrap" Canvas.Left="230" Canvas.Top="47" Width="111" TextChanged="RegistrationNoTextbox_TextChanged"/>
+            <TextBox x:Name="DescriptionTextbox" TextWrapping="Wrap" Canvas.Left="230" Canvas.Top="120" Width="111"/>
+            <TextBox x:Name="AdvisoryNoteTextbox" TextWrapping="Wrap" RenderTransformOrigin="0.51,0.963" Canvas.Left="230" Canvas.Top="179" Width="111"/>
+            <ComboBox x:Name="CustomerIDComboBox" DisplayMemberPath="data" Width="120" Canvas.Left="230" Canvas.Top="231" SelectionChanged="CustomerIDComboBox_SelectionChanged"/>
+            <DatePicker x:Name="WorkOrderTime" Canvas.Left="230" Canvas.Top="282"/>
+            <ListBox x:Name="InventoryCodesListBox" DisplayMemberPath="InventoryCode" Height="100" Canvas.Left="602" Canvas.Top="47" Width="100" SelectionMode="Multiple"/>
+            <Button x:Name="AddSupplierBtn" Content="Add Supplier" Click="AddSupplierBtnClick" Margin="667,371,39,28"/>
+            <Label Content="Work Order Code" Margin="88,47,584,346"/>
+            <Label Content="Description" RenderTransformOrigin="0.287,0.619" Margin="88,117,609,276"/>
+            <Label Content="Advisory Note" RenderTransformOrigin="0.803,0.838" Margin="88,179,609,214"/>
+            <Label Content="Customer ID" RenderTransformOrigin="0.803,0.838" Canvas.Left="88" Canvas.Top="231"/>
+            <Label Content="Work Order Time&#xA;" RenderTransformOrigin="0.803,0.838" Canvas.Left="88" Canvas.Top="281"/>
+            <Label Content="Inventory Codes" Margin="457,47,215,346"/>
+        </Canvas>
+    </Grid>
+</Window>

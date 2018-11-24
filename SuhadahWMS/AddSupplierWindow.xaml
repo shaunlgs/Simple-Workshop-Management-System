@@ -1,0 +1,26 @@
+﻿<Window x:Class="SuhadahWMS.AddSupplierWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SuhadahWMS"
+        mc:Ignorable="d"
+        Title="AddSupplierWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792">
+            <TextBox x:Name="SupplierCodeTextbox" TextWrapping="Wrap" Canvas.Left="230" Canvas.Top="47" Width="89"/>
+            <TextBox x:Name="NameTextbox" TextWrapping="Wrap" Canvas.Left="230" Canvas.Top="120" Width="89"/>
+            <TextBox x:Name="AddressTextbox" TextWrapping="Wrap" RenderTransformOrigin="0.51,0.963" Canvas.Left="230" Canvas.Top="179" Width="89"/>
+            <TextBox x:Name="PhoneTextbox" TextWrapping="Wrap" RenderTransformOrigin="0.51,0.963" Canvas.Left="230" Canvas.Top="237" Width="89"/>
+            <TextBox x:Name="EmailTextbox" TextWrapping="Wrap" RenderTransformOrigin="0.51,0.963" Canvas.Left="230" Canvas.Top="303" Width="89"/>
+            <TextBox x:Name="NoteTextbox" TextWrapping="Wrap" RenderTransformOrigin="0.51,0.963" Canvas.Left="230" Canvas.Top="353" Width="89"/>
+            <Button x:Name="AddSupplierBtn" Content="Add Supplier" Click="AddSupplierBtnClick" Margin="667,371,39,28"/>
+            <Label Content="Supplier Code" Margin="88,47,584,346"/>
+            <Label Content="Name" RenderTransformOrigin="0.287,0.619" Margin="88,117,609,276"/>
+            <Label Content="Address" RenderTransformOrigin="0.803,0.838" Margin="88,179,621,214"/>
+            <Label Content="Phone" RenderTransformOrigin="0.803,0.838" Margin="88,237,660,156"/>
+            <Label Content="Email" RenderTransformOrigin="0.803,0.838" Margin="88,303,658,90"/>
+            <Label Content="Note" RenderTransformOrigin="0.803,0.838" Margin="88,353,658,24"/>
+        </Canvas>
+    </Grid>
+</Window>

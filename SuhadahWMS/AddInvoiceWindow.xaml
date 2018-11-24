@@ -1,0 +1,23 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SuhadahWMS"
+        xmlns:Properties="clr-namespace:SuhadahWMS.Properties" x:Class="SuhadahWMS.AddInvoiceWindow"
+        mc:Ignorable="d"
+        Title="AddInvoiceWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792">
+            <TextBox x:Name="InvoiceCodeTextbox" TextWrapping="Wrap" Canvas.Left="230" Canvas.Top="47" Width="94"/>
+            <DatePicker x:Name="DateTextbox" Canvas.Left="230" Canvas.Top="119"/>
+            <ComboBox x:Name="MethodListBox" Height="26" Width="100" Canvas.Left="230" Canvas.Top="179"/>
+            <ListBox x:Name="WorkOrderCodesListBox" DisplayMemberPath="WorkOrderCode" Height="100" Canvas.Left="230" Canvas.Top="237" Width="100" SelectionMode="Multiple"/>
+            <Button x:Name="AddInvoiceBtn" Content="Add Invoice" Click="AddInvoiceBtnClick" Margin="667,371,39,28"/>
+            <Label Content="Invoice Code" Margin="88,47,584,346"/>
+            <Label Content="Date" RenderTransformOrigin="0.287,0.619" Margin="88,117,609,276"/>
+            <Label Content="Method" RenderTransformOrigin="0.803,0.838" Margin="88,179,609,214"/>
+            <Label Content="Work Order Codes" RenderTransformOrigin="0.803,0.838" Margin="88,237,584,156"/>
+        </Canvas>
+    </Grid>
+</Window>

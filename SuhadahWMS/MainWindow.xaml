@@ -1,0 +1,24 @@
+﻿<Window x:Class="SuhadahWMS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SuhadahWMS"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas Height="423" Width="796">
+            <Button x:Name="AddCustomerBtn" Content="Add Customer" Width="116" Canvas.Left="41" Canvas.Top="30" Click="AddCustomerBtnClick"/>
+            <Button x:Name="AddSupplierBtn" Content="Add Supplier" Width="116" Canvas.Left="41" Canvas.Top="80" Click="AddSupplierBtnClick"/>
+            <Button x:Name="AddVehicleBtn" Content="Add Vehicle" Width="116" Canvas.Left="41" Canvas.Top="130" Click="AddVehicleBtnClick"/>
+            <Button x:Name="AddInventoryBtn" Content="Add Inventory" Width="116" Canvas.Left="41" Canvas.Top="180" Click="AddInventoryBtnClick"/>
+            <Button x:Name="AddWorkOrderBtn" Content="Add Work Order" Width="116" Canvas.Left="41" Canvas.Top="230" Click="AddWorkOrderBtnClick"/>
+            <Button x:Name="AddInvoiceBtn" Content="Add Invoice" Width="116" Canvas.Left="41" Canvas.Top="280" Click="AddInvoiceBtnClick"/>
+            <Button x:Name="ViewCustomerBtn" Content="View Customers" Width="116" Canvas.Left="212" Canvas.Top="30" Click="ViewCustomerBtnClick"/>
+            <Button x:Name="ViewWorkOrderBtn" Content="View Work Orders" Width="116" Canvas.Left="212" Canvas.Top="80" Click="ViewWorkOrderBtnClick"/>
+            <Button x:Name="ViewInvoiceBtn" Content="View Invoices" Width="116" Canvas.Left="212" Canvas.Top="130" Click="ViewInvoicesBtnClick"/>
+            <Button x:Name="ViewCustomersWithWorkOrder" Content="View Customers with Work Order" Width="202" Canvas.Left="212" Canvas.Top="180" Click="ViewCustomersWithWorkOrderBtnClick"/>
+            <Button x:Name="DelateAllDataBtn" Content="Delete data" Width="116" Canvas.Left="212" Canvas.Top="230" Click="DeleteAllDataBtnClick"/>
+        </Canvas>
+    </Grid>
+</Window>
