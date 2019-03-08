@@ -1,6 +1,6 @@
 # Simple-Workshop-Management-System
 
-This is a WPF application coded using Visual Studio.
+This is a WPF application (Windows) coded using Visual Studio.
 
 The database used is MySQL server.
 
